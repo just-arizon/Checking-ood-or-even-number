@@ -1,32 +1,50 @@
-/* INSTRUCTIONS
- *
- * 1) Limit the total width of
- *    the .intro-conent to about half
- *    of it's parent
- *
- * 2) Stop the text from overflowing
- *    out the bottom at small screen
- *    widths
- *
- * You may modify the HTML if needed
- *
- */
 
-* {
-  box-sizing: border-box;
-}
+ * {
+      margin: 0;
+      padding: 0;
+    }
+      h1 {
+      color: #0c250fb4;
+      font-size: 30px;
+      font-family: "Rubik Iso", sans-serif;
+      background-color: #fff;
+      text-align: center;
+      padding: 30px;
+    }
+    .custom-shape-divider-bottom-1678576051 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+  
+    .custom-shape-divider-bottom-1678576051 svg {
+      position: relative;
+      display: block;
+      width: calc(168% + 1.3px);
+      height: 212px;
+      transform: rotateY(180deg);
+    }
 
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
+    .custom-shape-divider-bottom-1678576051 .shape-fill {
+      fill: #231e23;
+    }
 
-.container {
-  background: #23424a;
-  color: white;
+    /** For tablet devices **/
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .custom-shape-divider-bottom-1678576051 svg {
+        width: calc(150% + 1.3px);
+        height: 137px;
+      }
+    }
 
-  width: 80%;
-  margin: 0 auto;
-
-  padding: 2em;
-}
+    /** For mobile devices **/
+    @media (max-width: 767px) {
+      .custom-shape-divider-bottom-1678576051 svg {
+        width: calc(219% + 1.3px);
+        height: 79px;
+      }
+    }

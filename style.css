@@ -22,11 +22,14 @@ div.form-container {
   justify-content: center;
 }
 div.form {
+  min-width: 150px;
   height: 189px;
   background-color: #fff;
-  padding: 4rem 7rem;
+  padding: 4rem 5rem;
   border-radius: 10px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: flex;
+  justify-content: center;
 }
 
 .inputbox {
@@ -103,6 +106,7 @@ div.output--wrapper {
 .button{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
 }
 .custom-btn {
@@ -172,8 +176,7 @@ div.output--wrapper {
   }
 }
 @media (max-width: 500px){
-     div.form {
-    height: 189px;
-    padding: 4rem 2rem;  
-}
+  div.form {
+    padding-bottom: 6rem;
+  }
 }

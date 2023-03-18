@@ -1,5 +1,5 @@
 const userInput = document.querySelector("#fname");
-const submitToCheck = document.querySelector(".btn");
+const submitToCheck = document.querySelector(".custom-btn");
 
 submitToCheck.addEventListener("click", (event) => {
   event.preventDefault(); // prevent the default form submission behavior

@@ -177,6 +177,7 @@ div.output--wrapper {
 }
 @media (max-width: 500px){
   div.form {
+    padding-top: 2rem;
     padding-bottom: 6rem;
   }
 }

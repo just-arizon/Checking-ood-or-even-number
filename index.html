@@ -11,19 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div
       style="position: relative; background-color: skyblue; min-height: 100vh"
     >
       <div class="hero">
-        <h1>Welcome to the App</h1>
+        <h1>Even-Odd Checker App</h1>
         <div class="form-container">
           <div class="form">
             <form action="">
               <div class="inputbox">
-                <input required="required" type="text" id="fname"/>
+                <input required="required" type="text" id="fname" />
                 <span>Username</span>
                 <i></i>
               </div>
@@ -33,7 +36,15 @@
                   <div id="demo" style="color: #fff"></div>
                 </div>
               </div>
-              <div class="button"><input type="submit" value="Check" class="custom-btn btn-1" /></div>
+              <div class="button">
+                <input type="submit" value="Check" class="custom-btn btn-1" />
+                <input
+                  type="submit"
+                  value="Refresh"
+                  class="custom-btn btn-1"
+                  id="refresh-btn"
+                />
+              </div>
             </form>
           </div>
         </div>

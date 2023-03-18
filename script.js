@@ -1,5 +1,6 @@
 const userInput = document.querySelector("#fname");
 const submitToCheck = document.querySelector(".custom-btn");
+ const refreshBtn = document.getElementById('refresh-btn');
 
 submitToCheck.addEventListener("click", (event) => {
   event.preventDefault(); // prevent the default form submission behavior
@@ -17,3 +18,7 @@ submitToCheck.addEventListener("click", (event) => {
     document.getElementById("demo").innerHTML = odd;
   }
 });
+
+ refreshBtn.addEventListener('click', () => {
+        location.reload();
+      });

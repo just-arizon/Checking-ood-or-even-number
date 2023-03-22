@@ -177,7 +177,12 @@ div.output--wrapper {
 }
 @media (max-width: 500px){
   div.form {
+    margin-top: 2rem;
     padding-top: 2rem;
     padding-bottom: 6rem;
+  }
+  .hero h1{
+    font-size: 25px;
+    font-weight: 900;
   }
 }
